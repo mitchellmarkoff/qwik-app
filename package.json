@@ -18,7 +18,8 @@
     "lint": "eslint src/**/*.ts*",
     "preview": "qwik build preview && vite preview --open",
     "serve": "node server/entry.express",
-    "start": "vite --open --mode ssr",
+    "start": "node server/entry.express",
+    "start:dev": "vite --open --mode ssr",
     "qwik": "qwik"
   },
   "devDependencies": {
@@ -41,6 +42,7 @@
     "vite-tsconfig-paths": "3.5.0"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "polka": "^0.5.2"
   }
 }
